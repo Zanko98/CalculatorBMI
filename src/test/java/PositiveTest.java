@@ -21,8 +21,8 @@ public class PositiveTest {
         driver.findElement(By.name("wg")).sendKeys("38");
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
-        String isDisplayed = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(isDisplayed, "Your category is Starvation");
+        String category = driver.findElement(By.name("desc")).getAttribute("value");
+        Assert.assertEquals(category, "Your category is Starvation");
     }
 
     @Test
@@ -31,8 +31,8 @@ public class PositiveTest {
         driver.findElement(By.name("wg")).sendKeys("38.5");
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
-        String isDisplayed = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(isDisplayed, "Your category is Underweight");
+        String category = driver.findElement(By.name("desc")).getAttribute("value");
+        Assert.assertEquals(category, "Your category is Underweight");
     }
 
     @Test
@@ -41,8 +41,8 @@ public class PositiveTest {
         driver.findElement(By.name("wg")).sendKeys("39");
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
-        String isDisplayed = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(isDisplayed, "Your category is Underweight");
+        String category = driver.findElement(By.name("desc")).getAttribute("value");
+        Assert.assertEquals(category, "Your category is Underweight");
     }
     @Test
     public void imt18point5() {
@@ -50,8 +50,8 @@ public class PositiveTest {
         driver.findElement(By.name("wg")).sendKeys("47.38");
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
-        String isDisplayed = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(isDisplayed, "Your category is Normal");
+        String category = driver.findElement(By.name("desc")).getAttribute("value");
+        Assert.assertEquals(category, "Your category is Normal");
     }
     @Test
     public void imtMore18point5() {
@@ -59,8 +59,8 @@ public class PositiveTest {
         driver.findElement(By.name("wg")).sendKeys("48");
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
-        String isDisplayed = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(isDisplayed, "Your category is Normal");
+        String category = driver.findElement(By.name("desc")).getAttribute("value");
+        Assert.assertEquals(category, "Your category is Normal");
     }
     @Test
     public void imt25() {
@@ -68,8 +68,8 @@ public class PositiveTest {
         driver.findElement(By.name("wg")).sendKeys("64");
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
-        String isDisplayed = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(isDisplayed, "Your category is Normal");
+        String category = driver.findElement(By.name("desc")).getAttribute("value");
+        Assert.assertEquals(category, "Your category is Normal");
     }
     @Test
     public void imtMore25() {
@@ -77,8 +77,8 @@ public class PositiveTest {
         driver.findElement(By.name("wg")).sendKeys("65");
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
-        String isDisplayed = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(isDisplayed, "Your category is Overweight");
+        String category = driver.findElement(By.name("desc")).getAttribute("value");
+        Assert.assertEquals(category, "Your category is Overweight");
     }
     @Test
     public void imt30() {
@@ -86,8 +86,8 @@ public class PositiveTest {
         driver.findElement(By.name("wg")).sendKeys("76.8");
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
-        String isDisplayed = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(isDisplayed, "Your category is Overweight");
+        String category = driver.findElement(By.name("desc")).getAttribute("value");
+        Assert.assertEquals(category, "Your category is Overweight");
     }
     @Test
     public void imtMore30() {
@@ -95,8 +95,8 @@ public class PositiveTest {
         driver.findElement(By.name("wg")).sendKeys("77");
         driver.findElement(By.name("ht")).sendKeys("160");
         driver.findElement(By.cssSelector("[value=Calculate]")).click();
-        String isDisplayed = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals(isDisplayed, "Your category is Obese");
+        String category = driver.findElement(By.name("desc")).getAttribute("value");
+        Assert.assertEquals(category, "Your category is Obese");
     }
 
     @AfterMethod(alwaysRun = true)
